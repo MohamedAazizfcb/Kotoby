@@ -1,29 +1,19 @@
-﻿using System;
+﻿using Domain.Enums;
+using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using System.Net.NetworkInformation;
-using System.Net;
-using System.Reflection;
-using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using System.Xml.Linq;
-using Domain.Enums;
-using Microsoft.AspNetCore.Identity;
 
-namespace Domain.Entities
+namespace Domain.Dtos.User
 {
-    public class User : IdentityUser
+    public class GetUserResponse
     {
         public int Id { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string FullName { get; set; }
         public DateOnly DateOfBirth { get; set; }
-        public string? ProfilePicture { get; set; }
+        public string ProfilePicture { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime LastLogin { get; set; }
         public AccountStatus AccountStatus { get; set; }
