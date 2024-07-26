@@ -1,0 +1,16 @@
+{
+    "name": "Kotobi",
+    "short_name": "Kotobi",
+    "description": "Kotobi",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#317EFB",
+    "icons": [
+      {
+        "src": "assets/icons/icon-72x72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      }
+    ]
+  }
